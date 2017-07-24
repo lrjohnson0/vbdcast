@@ -1,20 +1,19 @@
-This directory contains supplementary material for Johnson, et al (2016)
-"Phenomenological forecasting of disease incidence using heteroskedastic
-Gaussian processes: a dengue case study".  The directory structure is explained
-as follows.  In each case, see the README therein for more details.
+# vbdcast: Vector-borne disease forecasting
 
-R: source files for hetGP in the R language for statistical computing. 
+### Phenomonological forecasting of dengue outbreaks
 
-src: source files for hetGP in C; the README contains compilation instructions for
-building shared objects that can be linked into R, as required for the files in
-the R directory.  These files are derived from the laGP package on CRAN.
+This repository primarily contains supplementary material for [Johnson, et al (2016) "Phenomenological forecasting of disease incidence using heteroskedastic
+Gaussian processes: a dengue case study"](https://arxiv.org/abs/1702.00261).  
 
-examples: contains R scripts and data files that are used in those scripts to
-perform the GP-based analyses in the paper.  The code in this directory
-duplicates many of the pdfs in the results directory.
+The directory structure is explained as follows.  In each case, see the README therein for more details.
 
-results: pdf-based visualizations for GP and GLM-based figures, a subset of
-which are provided in the manuscript.  In particular, iquitos.pdf and
-sanjuan.pdf contain the "movies" of each four-weekly prediction under the hetGP
-which are genreated by gp_dengue_iquitos.R and gp_dengue_sanjuan.R in the
-examples directory, respectively.
+* `code`: source files for hetGP and GLM comparators in the R language for statistical computing. 
+
+* `data`: pre-processed data files from the [Dengue Forecasting Project](http://dengueforecasting.noaa.gov/)
+
+* `results`: pdf-based visualizations for GP and GLM-based figures, a subset of which are provided in the manuscript.  
+
+### Who do I talk to? ###
+
+* The project was originated and is actively maintained by Leah R. Johnson <lrjohn@vt.edu>
+* Contributers include Leah R. Johnson, Robert B. Gramacy, Jeremy Cohen, Erin Mordecai, Courtney Murdock, Jason Rohr, Sadie J. Ryan, Anna M. Stewart-Ibarra, and Daniel Weikel
