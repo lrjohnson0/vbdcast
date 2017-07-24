@@ -15,5 +15,5 @@ The directory structure is explained as follows.  In each case, see the README t
 
 ### Who do I talk to? ###
 
-* The project was originated and is actively maintained by Leah R. Johnson <lrjohn@vt.edu>
+* The project was originated and is actively maintained by Leah R. Johnson: <lrjohn@vt.edu>
 * Contributers include Leah R. Johnson, Robert B. Gramacy, Jeremy Cohen, Erin Mordecai, Courtney Murdock, Jason Rohr, Sadie J. Ryan, Anna M. Stewart-Ibarra, and Daniel Weikel

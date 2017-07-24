@@ -1,14 +1,14 @@
 ## choose to collect results for sanjuan or iquitos
-loc <- "iquitos" ## "sanjuan" ## "iquitos"
+loc <- "sanjuan" ## "iquitos"
 if(loc == "iquitos") { location <- "Iquitos"
 } else if(loc == "sanjuan") { location <- "San Juan"
 } else stop("bad loc")
 
 ## Read in the data
-res <- read.csv("dengue_forecast_scores.csv", header=T)
-res.new <- read.csv(paste("newscores_", loc, ".csv", sep=""), header=T)
+res <- read.csv("../csvouts/dengue_forecast_scores.csv", header=T)
+res.new <- read.csv(paste("../csvouts/newscores_", loc, ".csv", sep=""), header=T)
 res <- rbind(res, res.new)
-res.new <- read.csv(paste("glm_newscores_", loc, ".csv", sep=""), header=T)
+res.new <- read.csv(paste("../csvouts/glm_newscores_", loc, ".csv", sep=""), header=T)
 res <- rbind(res, res.new)
 
 ## set up utility variables for later
@@ -148,8 +148,8 @@ ae.tab <- ae.tab[c(1,2,4,5,7,8,9,10,11,12,13,14,15,16,17,6,18,19,3),]
 if(loc == "sanjuan") {
 
     ## MAE comparison to yamana, discarding training proportion
-    df <- read.csv("quants_sanjuan.csv")[-(1:52),]
-    df.y <- read.csv("../../../data/dengue/yamana/sanjuan.csv")[-(1:52),]
+    df <- read.csv("../csvouts/quants_sanjuan.csv")[-(1:52),]
+    df.y <- read.csv("../../data/yamana/sanjuan.csv")[-(1:52),]
 
     pi.mae <- c(hetGP=mean(abs(df$pitrue - df$pipred)),
         F1=mean(abs(df$pitrue - df.y$F1.pi)),
