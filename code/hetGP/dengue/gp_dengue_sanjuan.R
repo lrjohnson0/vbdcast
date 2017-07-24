@@ -1,7 +1,7 @@
 rm(list=ls())
 
-## data <- read.csv("../../../data/dengue/sanjuan_training.csv")
-data <- read.csv("../../../data/dengue/sanjuan_testing.csv")
+## data <- read.csv("../../../data/sanjuan_training.csv")
+data <- read.csv("../../../data/sanjuan_testing.csv")
 
 tr.seas <- c("2008/2009", "2009/2010", "2010/2011", "2011/2012")
 tr.seas <- c("2004/2005", "2005/2006", "2006/2007", "2007/2008", tr.seas)

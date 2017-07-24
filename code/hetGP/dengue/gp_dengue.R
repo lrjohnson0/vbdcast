@@ -1,8 +1,8 @@
-dyn.load("../../src/hetGP.so")
-source("../../R/gp.R")
-source("../../R/transform.R")
-source("../../R/metrics.R")
-source("../../R/prior.R")
+dyn.load("../src/hetGP.so")
+source("../R/gp.R")
+source("../R/transform.R")
+source("../R/metrics.R")
+source("../R/prior.R")
 
 ## create score file names and remove old one
 scorefile <- paste("newscores_", location, ".csv", sep="")
@@ -51,11 +51,11 @@ for(si in 1:length(tr.seas)) {
 	odf <- data.frame(x=offset[,1], y=apply(lY, 1, max))
 	ofit <- lm(y ~ x, data=odf)
 
-	pdf("prior.pdf", width=5, height=5)
-	plot(odf, xlab="x3: starting level", ylab="peak incidence")
-	abline(h=f2(breaks+1), col=2, lty=2, lwd=2)
-	text(x=rep(6,3), y=c(3.25,6.5,11), labels=c("x4=-1", "x4=0", "x4=+1"), col=4)
-	stop()
+	## pdf("prior.pdf", width=5, height=5)
+	## plot(odf, xlab="x3: starting level", ylab="peak incidence")
+	## abline(h=f2(breaks+1), col=2, lty=2, lwd=2)
+	## text(x=rep(6,3), y=c(3.25,6.5,11), labels=c("x4=-1", "x4=0", "x4=+1"), col=4)
+	## dev.off()
 
 	## converting the year-matrices above into flat predictors
 	xw <- rep((1:52)/52, nrow(lY))
