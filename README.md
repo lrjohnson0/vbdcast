@@ -1,6 +1,6 @@
 # vbdcast: Vector-borne disease forecasting
 
-### Phenomonological forecasting of dengue outbreaks
+### Phenomenological forecasting of dengue outbreaks
 
 This repository primarily contains supplementary material for [Johnson, et al (2016) "Phenomenological forecasting of disease incidence using heteroskedastic
 Gaussian processes: a dengue case study"](https://arxiv.org/abs/1702.00261).  
