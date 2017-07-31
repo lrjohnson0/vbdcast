@@ -1,0 +1,22 @@
+column,name,type,description,source (if not provided by challenge)
+A,season,date,dengue season,
+B,season_week,date,week of spring-spring season,
+C,yearweek,date,week of calendar year,
+D,week_start_date,date,date of start of week,
+E,weekID,date,year and week ID for combining datasets,
+F,monthID,date,year and month ID for combining datasets,
+G,yearweek,date,year for combining datasets,
+H-N,dengue cases,response,dengue response data,
+O-R,NDVI,predictor,NDVI at 4 coordinates,
+S,satprecip,predictor,total precipitation (satellite data),
+T,tmin,predictor,minimum weekly temp (reanalysis data),
+U,tmax,predictor,maximum weekly temp (reanalysis data),
+V,prec,predictor,total weekly precipitation (reanalysis data),
+W,dtr,predictor,avg diurnal temp range (reanalysis data),
+X,tavg,predictor,average weekly temp (reanalysis data),
+Y,nino12,predictor,Nino 1-2 SST index,http://www.cpc.ncep.noaa.gov/data/indices/sstoi.indices
+Z,nino34,predictor,"Nino 3,4 SST index",http://www.cpc.ncep.noaa.gov/data/indices/sstoi.indices
+AA,soi,predictor,Southern Oscillation Anomaly,http://www.cpc.ncep.noaa.gov/data/indices/soi
+AB,pop,predictor,"Population (yearly, as provided)",
+AC,adjpop,predictor,Population (adjusted to weekly),
+AD,control,predictor,"Control efforts (IQUITOS only, 1= control efforts, 0= no efforts)",
