@@ -80,7 +80,7 @@ ls.rankstab <- cbind(peakinc=rowMeans(apply(ls.dat[[1]]$results[,-1], 1, rank)),
 ls.rankstab <- ls.rankstab[c(1,2,4,5,7,8,9,10,11,12,13,14,15,16,17,6,18,19,3),]
 
 library(xtable)
-xtable(ls.rankstab)
+xtable(20-ls.rankstab)
 
 ## table of averages of LS
 ls.tab <- cbind(peakinc=colMeans(ls.dat[[1]]$results[,-1]),
@@ -103,7 +103,7 @@ for(k in 1:length(targets)) {
     ##pick out the target
     res.temp<-ae.res[which(ae.res$prediction.target==targets[k]),]
 
-    ## build a data frame to save the weekly results
+    ## build a data frame to save the weekly results 
     temp<-data.frame(matrix(NA, ncol=length(teams)+1, nrow=length(weeks)))
     names(temp)<-c("week", teams)
     temp$week<-weeks
