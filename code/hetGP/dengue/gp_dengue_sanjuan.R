@@ -66,10 +66,13 @@ dev.off()
 
 
 ## histograms of PIT
-pdf("pit_sanjuan.pdf", width=5, height=14)
+## pdf("pit_sanjuan.pdf", width=5, height=14)
 pit <- read.csv("pit_sanjuan.csv")
-par(mfrow=c(3,1), mar=c(2,5,1,1))
-hist(pit$pi.nopast, xlab="", ylab="peak incidence", cex.lab=2, main="", ylim=c(0,50))
-hist(pit$pw.nopast, xlab="", ylab="peak week", cex.lab=2, main="", ylim=c(0,50))
-hist(pit$ti.nopast, xlab="", ylab="total incidence", cex.lab=2, main="", ylim=c(0,50))
+pdf("pit_sanjuan.pdf", width=14, height=5)
+## par(mfrow=c(3,1), mar=c(2,5,1,1))
+pit <- read.csv("pit_sanjuan.csv")
+par(mfrow=c(1,3), mar=c(2,5,1,1))
+hist(pit$pi.nopast, xlab="", ylab="peak incidence - hetGP", cex.lab=2, main="", ylim=c(0,50))
+hist(pit$pw.nopast, xlab="", ylab="peak week - hetGP", cex.lab=2, main="", ylim=c(0,50))
+hist(pit$ti.nopast, xlab="", ylab="total incidence - hetGP", cex.lab=2, main="", ylim=c(0,50))
 dev.off()

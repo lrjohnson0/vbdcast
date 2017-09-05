@@ -30,11 +30,13 @@ for(i in 1:length(obj)) {
 }
 
 ## output to sanjan file
-pdf("pit_sanjuan_hybrid.pdf", width=5, height=14)
-par(mfrow=c(3,1), mar=c(2,5,1,1))
-hist(pi.pit, xlab="", ylab="peak incidence", cex.lab=2, main="", ylim=c(0,50))
-hist(pw.pit, xlab="", ylab="peak week", cex.lab=2, main="", ylim=c(0,50))
-hist(ti.pit, xlab="", ylab="total incidence", cex.lab=2, main="", ylim=c(0,50))
+## pdf("pit_sanjuan_hybrid.pdf", width=5, height=14)
+pdf("pit_sanjuan_hybrid.pdf", width=14, height=5)
+par(mfrow=c(1,3), mar=c(2,5,1,1))
+## par(mfrow=c(3,1), mar=c(2,5,1,1))
+hist(pi.pit, xlab="", ylab="peak incidence - hybrid", cex.lab=2, main="", ylim=c(0,50))
+hist(pw.pit, xlab="", ylab="peak week - hybrid", cex.lab=2, main="", ylim=c(0,50))
+hist(ti.pit, xlab="", ylab="total incidence - hybrid", cex.lab=2, main="", ylim=c(0,50))
 dev.off()
 
 ## Then for Iquitos
@@ -64,9 +66,11 @@ for(i in 1:length(obj)) {
 }
 
 ## output to iquitos file
-pdf("pit_iquitos_hybrid.pdf", width=5, height=14)
-par(mfrow=c(3,1), mar=c(2,5,1,1))
-hist(pi.pit, xlab="", ylab="peak incidence", cex.lab=2, main="", ylim=c(0,60))
-hist(pw.pit, xlab="", ylab="peak week", cex.lab=2, main="", ylim=c(0,60))
-hist(ti.pit, xlab="", ylab="total incidence", cex.lab=2, main="", ylim=c(0,60))
+## pdf("pit_iquitos_hybrid.pdf", width=5, height=14)
+pdf("pit_iquitos_hybrid.pdf", width=14, height=5)
+par(mfrow=c(1,3), mar=c(2,5,1,1))
+## par(mfrow=c(3,1), mar=c(2,5,1,1))
+hist(pi.pit, xlab="", ylab="peak incidence - hybrid", cex.lab=2, main="", ylim=c(0,60))
+hist(pw.pit, xlab="", ylab="peak week - hybrid", cex.lab=2, main="", ylim=c(0,60))
+hist(ti.pit, xlab="", ylab="total incidence - hybrid", cex.lab=2, main="", ylim=c(0,60))
 dev.off()
